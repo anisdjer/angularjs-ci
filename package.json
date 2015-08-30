@@ -1,0 +1,28 @@
+{
+  "name": "angularjs-ci",
+  "version": "0.0.0",
+  "description": "Learn how to implement unit tests and protractor tests",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anisdjer/angularjs-ci.git"
+  },
+  "author": "Anis B <leprinceanis@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anisdjer/angularjs-ci/issues"
+  },
+  "homepage": "https://github.com/anisdjer/angularjs-ci",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "load-grunt-tasks": "~3.2.0",
+    "grunt-ngdocs": "~0.2.9",
+    "jasmine-core": "~2.3.4",
+    "karma-jasmine": "~0.3.6",
+    "phantomjs": "~1.9.18",
+    "karma-phantomjs-launcher": "~0.2.1",
+    "grunt-karma": "~0.10.0"
+  }
+}

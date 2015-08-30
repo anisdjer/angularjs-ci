@@ -48,4 +48,4 @@ module.exports = function (grunt) {
 	grunt.registerTask('doc', 'Generate docs.', ['ngdocs']);
 	grunt.registerTask('test', 'Do tests.', ['karma:unit']);
 };
-  
+

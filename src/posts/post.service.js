@@ -9,11 +9,13 @@ angular.module('post')
 	 *
 	 * The post model
 	 *
+	 * @property {string} title the post title.
 	 */
 	.factory('Post', function () {
 		
-		return function Post (title) {
-	  		this.title = title;
+		return function Post (post) {
+			post = post || {};
+	  		this.title = post.title;
 		};
 	})
 	
@@ -27,8 +29,16 @@ angular.module('post')
 	 * The post manager
 	 *
 	 */
-	.factory("PostManager", ["$http", "$q", function ($http, $q) {
-		
+	.factory("PostManager", ["$http", "$q", "Post", function ($http, $q, Post) {
+		/**
+		* @ngdoc function
+		* @name post.service:PostManager#getPosts
+		* @methodOf post.service:PostManager
+		* @description
+		* fetch posts from the API.
+		*
+		* @return {Promise} posts
+		*/
 		function getPosts() {
 			var defer = $q.defer();
 			$http.get("http://communityjs-anisbouhachem.rhcloud.com/api/posts")

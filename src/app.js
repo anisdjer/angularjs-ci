@@ -1,5 +1,5 @@
 /*global angular, document*/
-/**
+/*
  * @ngdoc overview
  * @name app.controllers
  *
@@ -10,7 +10,7 @@
  *
  */
 angular.module('app.controllers', ['ng']);
-/**
+/*
  * @ngdoc overview
  * @name app.services
  *
@@ -30,8 +30,10 @@ angular.module('app.services', ['ng']);
  * @description
  * # main module
  *
- * This module is the main module
+ * This module is the **`main`** module
  *
+ * @requires post
+ * @requires ui.router
  */
 angular.module('app', [
 	'ng',

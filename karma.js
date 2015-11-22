@@ -8,15 +8,15 @@ module.exports = function (karma) {
     // list of files / patterns to load in the browser
     files: [
 		"vendor/angular/angular.min.js",
-		"vendor/ui-router/release/angular-ui-router.min.js",
+		"vendor/angular-ui-router/release/angular-ui-router.min.js",
 		"vendor/angular-mocks/angular-mocks.js",
-		"posts/post.module.js",
+		"posts/js/post.module.js",
 		"app.js",
-		"posts/post.controller.js",
-		"posts/post.service.js",
+		"posts/js/post.controller.js",
+		"posts/js/post.service.js",
 		
 		
-		"**/*.spec.js",
+		"**/specs/*.spec.js",
 	],
 
     // level of logging

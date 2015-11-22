@@ -9,5 +9,5 @@ angular.module('app')
 			url : "/posts",
 			template : '<section><h1>Posts</h1></section>'
 		});
-		$urlRouterProvider.otherwise('home');
+		$urlRouterProvider.otherwise('/');
 	}]);

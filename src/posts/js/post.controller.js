@@ -17,7 +17,7 @@ angular.module('post')
 
 		scope.init = function () {
 	        scope.getPosts();
-	    };
+        };
 
 		scope.getPosts = function () {
 			return PostManager.getPosts()

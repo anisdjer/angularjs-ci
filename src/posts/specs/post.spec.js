@@ -28,10 +28,14 @@ describe('Post module', function () {
         // http expectations
         $httpBackend.expectGET(/.*\/api\/posts/).respond(200, postsMock);
 
+        spyOn(postMainController, "getPosts");
+
+        postMainController.init();
+
         expect(postMainController.text).toEqual("Hello world !");
 
         // Test if the function returns a promise.
-        expect(postMainController.getPosts().then).toBeDefined();
+        expect(postMainController.getPosts).toHaveBeenCalled();
     });
 
     describe('PostManagerService', function (done) {

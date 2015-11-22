@@ -15,7 +15,7 @@ angular.module('post')
 		var scope = this;
 		scope.text = "Hello world !";
 
-	    scope.init = function () {
+		scope.init = function () {
 	        scope.getPosts();
 	    };
 

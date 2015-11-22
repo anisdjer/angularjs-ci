@@ -15,7 +15,7 @@ angular.module('post')
 		
 		return function Post (post) {
 			post = post || {};
-	  		this.title = post.title;
+			this.title = post.title;
 		};
 	})
 	
@@ -53,3 +53,4 @@ angular.module('post')
 			getPosts : getPosts
 		};
 	}]);
+

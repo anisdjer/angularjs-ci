@@ -13,7 +13,7 @@ module.exports = function (grunt) {
 				title : "Angular CI documentation"
 			},
 			//all: ['src/vendor/ui-router/src/*.js']
-			all: ['src/{,*/}*.js', '!src/vendor*']
+			all: ['src/*.js', 'src/{,*/}*/js/*.js', '!src/vendor*']
 		},
 		karma: {
 			options: {

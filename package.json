@@ -18,6 +18,7 @@
   "homepage": "https://github.com/anisdjer/angularjs-ci",
   "devDependencies": {
     "grunt-cli":"0.1.13",
+    "bower":"1.4.1",
     "grunt": "~0.4.5",
     "load-grunt-tasks": "~3.2.0",
     "grunt-ngdocs": "~0.2.9",

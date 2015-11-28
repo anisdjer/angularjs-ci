@@ -13,17 +13,12 @@ angular.module('post')
 	.controller('PostMainController', ["PostManager", function (PostManager) {
 		"use strict";
 		var scope = this;
-		scope.text = "Hello world !";
+        scope.posts = [];
 
-		scope.init = function () {
-			scope.getPosts();
-		};
-
-		scope.getPosts = function () {
-			return PostManager.getPosts()
-				.then(function (posts) {
-					return posts;
-				});
+        scope.init = function () {
+			PostManager.getPosts().then(function (posts) {
+                scope.posts = posts;
+            });
 		};
 
         scope.init();

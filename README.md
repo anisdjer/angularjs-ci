@@ -1,6 +1,6 @@
 # angularjs-ci
 Learn how to implement unit tests and protractor tests
-
+[![Build Status](https://travis-ci.org/anisdjer/angularjs-ci.svg?branch=develop)](https://travis-ci.org/anisdjer/angularjs-ci)
 # LICENCE
 The MIT License (MIT)
 

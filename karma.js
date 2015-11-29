@@ -10,9 +10,9 @@ module.exports = function (karma) {
 		"vendor/angular/angular.min.js",
 		"vendor/angular-ui-router/release/angular-ui-router.min.js",
 		"vendor/angular-mocks/angular-mocks.js",
-		"posts/js/post.module.js",
-		"posts/js/post.controller.js",
-		"posts/js/post.service.js",
+		"post/js/post.module.js",
+		"post/js/post.controller.js",
+		"post/js/post.service.js",
 		"app/js/app.js",
 		"app/js/app.routes.js",
 		

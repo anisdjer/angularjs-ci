@@ -14,6 +14,7 @@ angular.module('post')
         "use strict";
         var scope = this;
         scope.posts = [];
+
         /**
         * @ngdoc function
         * @name post.controller:PostMainController#getPosts
@@ -28,4 +29,4 @@ angular.module('post')
                 scope.posts = posts;
             });
         };
-	}]);
+    }]);

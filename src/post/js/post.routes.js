@@ -13,7 +13,7 @@
             .state("post.list", {
                 views : {
                     "post" : {
-                        templateUrl : "posts/views/list.html"
+                        templateUrl : "post/views/list.html"
                     }
                 }
              });

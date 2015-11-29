@@ -27,6 +27,8 @@ describe('Post module', function () {
             postMainController = $controller('PostMainController', {PostManager : PostManagerMock});
             expect(postMainController.posts).toEqual([]);
 
+            postMainController.getPosts();
+
             $rootScope.$digest();
 
             expect(postMainController.posts).toEqual(postsMock);

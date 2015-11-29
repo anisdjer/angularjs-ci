@@ -10,7 +10,8 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		ngdocs: {
 			options : {
-				title : "Angular CI documentation"
+				title : "Angular CI documentation",
+                titleLink : ".."
 			},
 			//all: ['src/vendor/ui-router/src/*.js']
 			all: ['src/*.js', 'src/{,*/}*/js/*.js', '!src/vendor*']

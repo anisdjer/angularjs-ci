@@ -25,7 +25,7 @@ describe('Post module', function () {
         it('should fetch list of posts from API', function () {
             var postsMock = [new Post({title: "Titile 1", body: "Body 1"})];
             // http expectations
-            $httpBackend.expectGET(/data\/posts/).respond(200, postsMock);
+            $httpBackend.expectGET("data/posts.json").respond(200, postsMock);
 
             PostManager.getPosts()
                 .then(function (data) {

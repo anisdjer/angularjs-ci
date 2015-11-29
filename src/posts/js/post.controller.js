@@ -11,8 +11,8 @@ angular.module('post')
 	*
 	*/
 	.controller('PostMainController', ["PostManager", function (PostManager) {
-		"use strict";
-		var scope = this;
+        "use strict";
+        var scope = this;
         scope.posts = [];
         /**
         * @ngdoc function
@@ -24,8 +24,8 @@ angular.module('post')
         * @return {Promise<Post[]>} posts Array of posts
         */
         scope.getPosts = function () {
-			return PostManager.getPosts().then(function (posts) {
+            return PostManager.getPosts().then(function (posts) {
                 scope.posts = posts;
             });
-		};
+        };
 	}]);

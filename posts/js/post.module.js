@@ -9,4 +9,4 @@
  * This module handles posts.
  *
  */
-angular.module('post', ['ng']);
+angular.module('post', ['ng', 'ui.router']);

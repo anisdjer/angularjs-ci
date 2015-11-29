@@ -47,7 +47,7 @@
         */
         function getPosts() {
             var defer = $q.defer();
-            $http.get("http://communityjs-anisbouhachem.rhcloud.com/api/posts")
+            $http.get("data/posts.json")
                 .then(function (response) {
                     var result = [];
                     angular.forEach(response.data, function (post) {

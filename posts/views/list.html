@@ -1,0 +1,6 @@
+<section data-ng-controller="PostMainController as postCtrl">
+    <h1>Posts</h1>
+    <ul>
+        <li data-ng-repeat="post in postCtrl.posts" data-ng-bind="post.title"></li>
+    </ul>
+</section>

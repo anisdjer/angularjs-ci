@@ -4,10 +4,7 @@ angular.module('app')
 		'use strict';
 		$stateProvider.state('home', {
 			url : "/",
-			templateUrl: 'views/home.html'
-		}).state('posts', {
-			url : "/posts",
-			template : '<section><h1>Posts</h1></section>'
+			templateUrl: 'app/views/home.html'
 		});
 		$urlRouterProvider.otherwise('/');
 	}]);

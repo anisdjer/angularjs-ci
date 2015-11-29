@@ -13,7 +13,8 @@ module.exports = function (karma) {
 		"posts/js/post.module.js",
 		"posts/js/post.controller.js",
 		"posts/js/post.service.js",
-		"app.js",
+		"app/js/app.js",
+		"app/js/app.routes.js",
 		
 		
 		"**/specs/*.spec.js",

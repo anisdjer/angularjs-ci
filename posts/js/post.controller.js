@@ -14,12 +14,18 @@ angular.module('post')
 		"use strict";
 		var scope = this;
         scope.posts = [];
-
-        scope.init = function () {
-			PostManager.getPosts().then(function (posts) {
+        /**
+        * @ngdoc function
+        * @name post.controller:PostMainController#getPosts
+        * @methodOf post.controller:PostMainController
+        * @description
+        * fetch posts from the API.
+        *
+        * @return {Promise<Post[]>} posts Array of posts
+        */
+        scope.getPosts = function () {
+			return PostManager.getPosts().then(function (posts) {
                 scope.posts = posts;
             });
 		};
-
-        scope.init();
 	}]);

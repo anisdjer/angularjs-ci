@@ -24,9 +24,9 @@
      * @ngdoc service
      * @name post.service:PostManager
      * 
-     * @param {object} $http http provider
-     * @param {object} $q promise provider
-     * @param {constructor} Post the post model
+     * @requires $http
+     * @requires $q
+     * @requires post.service:Post
      * 
      * @description
      * # post manager

@@ -46,7 +46,7 @@ NG_DOCS={
       "type": "service",
       "moduleName": "post",
       "shortDescription": "post manager",
-      "keywords": "$http $q api fetch function getposts http manager model post posts promise provider service"
+      "keywords": "$http $q api fetch function getposts manager post posts service"
     }
   ],
   "apis": {

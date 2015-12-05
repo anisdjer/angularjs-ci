@@ -16,8 +16,6 @@ describe('Post module routes', function () {
     describe("main route", function () {
         it('should be called', function () {
             expect($state.href("post")).toEqual('#/posts');
-            $rootScope.$digest();
-            expect($state.href("post")).toEqual('#/posts');
         });
     });
 

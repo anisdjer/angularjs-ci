@@ -28,7 +28,7 @@ NG_DOCS={
       "type": "controller",
       "moduleName": "post",
       "shortDescription": "post list controller",
-      "keywords": "api controller list post"
+      "keywords": "api array controller fetch function getposts list post posts"
     },
     {
       "section": "api",
@@ -37,7 +37,7 @@ NG_DOCS={
       "type": "controller",
       "moduleName": "post",
       "shortDescription": "post main controller",
-      "keywords": "api array controller fetch function getposts main post posts"
+      "keywords": "api controller main post"
     },
     {
       "section": "api",

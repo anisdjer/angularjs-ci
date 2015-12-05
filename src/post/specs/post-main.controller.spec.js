@@ -1,37 +1,28 @@
 /*global describe, beforeEach, module, inject, it, expect*/
 /*jslint nomen: true*/
-describe('Post module', function () {
+describe('Post module controllers', function () {
     "use strict";
     beforeEach(module('post'));
 
-    var $controller, $q, $rootScope,
-        postsMock = [{title: "Titile 1", body: "Body 1"}];
+    var $controller, $state, $rootScope, $templateCache;
 
     beforeEach(inject(function ($injector) {
         $controller = $injector.get("$controller");
-        $q = $injector.get("$q");
+        $state = $injector.get("$state");
         $rootScope = $injector.get("$rootScope");
+        $templateCache = $injector.get("$templateCache");
+        
+        $templateCache.put('post/views/list.html', '');
     }));
 
     afterEach(function() {});
 
     describe("PostMainController", function () {
         it('should be initialized', function () {
-            var postMainController,
-                PostManagerMock = {
-                    getPosts :  function () {
-                        return $q.when(postsMock);
-                    }
-                };
-            
-            postMainController = $controller('PostMainController', {PostManager : PostManagerMock});
-            expect(postMainController.posts).toEqual([]);
+            spyOn($state, "go");
+            $controller("PostMainController", {$state : $state});
 
-            postMainController.getPosts();
-
-            $rootScope.$digest();
-
-            expect(postMainController.posts).toEqual(postsMock);
+            expect($state.go).toHaveBeenCalledWith("post.list");
         }); 
     });
     

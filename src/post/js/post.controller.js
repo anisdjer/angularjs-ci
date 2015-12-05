@@ -5,12 +5,25 @@
     * @name post.controller:PostMainController
     *
     * @description
-    * # main post controller
+    * # post main controller
     *
-    * The main post controller
+    * The post main controller
     *
     */
-    app.controller('PostMainController', ["PostManager", function (PostManager) {
+    app.controller('PostMainController', ["$state", function ($state) {
+        $state.go("post.list");
+    }]);
+    /**
+    * @ngdoc controller
+    * @name post.controller:PostListController
+    *
+    * @description
+    * # post list controller
+    *
+    * The post list controller
+    *
+    */
+    app.controller('PostListController', ["PostManager", function (PostManager) {
         "use strict";
         var scope = this;
         scope.posts = [];

@@ -6,11 +6,10 @@
             .state("post", {
                 url : "/posts",
                 template : '<section data-ui-view="post"></section>',
-                controller : ["$state", function ($state) {
-                    $state.go("post.list");
-                }]
+                controller : "PostMainController"
             })
             .state("post.list", {
+                url : "/list",
                 views : {
                     "post" : {
                         templateUrl : "post/views/list.html"

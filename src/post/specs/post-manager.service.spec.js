@@ -1,6 +1,6 @@
 /*global describe, beforeEach, module, inject, it, expect*/
 /*jslint nomen: true*/
-describe('Post module', function () {
+describe('Post module services', function () {
     "use strict";
     beforeEach(module('post'));
 

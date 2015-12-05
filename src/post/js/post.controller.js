@@ -30,8 +30,8 @@
 
         /**
         * @ngdoc function
-        * @name post.controller:PostMainController#getPosts
-        * @methodOf post.controller:PostMainController
+        * @name post.controller:PostListController#getPosts
+        * @methodOf post.controller:PostListController
         * @description
         * fetch posts from the API.
         *

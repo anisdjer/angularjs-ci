@@ -19,6 +19,11 @@ describe('Post module', function () {
 
             expect(post.title).toEqual(data.title);
         });
+        it('should be initialized if data is empty', function () {
+            var post = new Post();
+
+            expect(post.title).toEqual("Title");
+        });
     });
 
 });

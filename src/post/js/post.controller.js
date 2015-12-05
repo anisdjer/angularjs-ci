@@ -1,5 +1,5 @@
 /*global angular*/
-angular.module('post')
+(function (app) {
     /**
     * @ngdoc controller
     * @name post.controller:PostMainController
@@ -10,7 +10,7 @@ angular.module('post')
     * The main post controller
     *
     */
-    .controller('PostMainController', ["PostManager", function (PostManager) {
+    app.controller('PostMainController', ["PostManager", function (PostManager) {
         "use strict";
         var scope = this;
         scope.posts = [];
@@ -30,3 +30,4 @@ angular.module('post')
             });
         };
     }]);
+}(angular.module('post')));

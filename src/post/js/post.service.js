@@ -16,7 +16,7 @@
 
         return function Post(post) {
             post = post || {};
-            this.title = post.title;
+            this.title = post.title || "Title";
         };
     });
 
@@ -35,7 +35,7 @@
      * 
      *
      */
-    app.factory("PostManager", ["$http", "$q", "Post", function ($http, $q, Post) {
+    app.factory("PostManager", ["$http", "$q", "Post", function PostManager($http, $q, Post) {
         /**
         * @ngdoc function
         * @name post.service:PostManager#getPosts

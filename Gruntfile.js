@@ -20,14 +20,14 @@ module.exports = function (grunt) {
 			options: {
 				configFile: 'karma.js',
 				singleRun: true,
-				exclude: [],
+//				exclude: [],
 				frameworks: ['jasmine'],
-				reporters: 'dots', // 'dots' || 'progress'
-				port: 8080,
-				colors: true,
+//				reporters: 'coverage', // 'dots' || 'progress'
+//				port: 8080,
+//				colors: true,
 				autoWatch: true,
-				autoWatchInterval: 0,
-				browsers: [ grunt.option('browser') || 'PhantomJS' ]
+//				autoWatchInterval: 0,
+//				browsers: [ grunt.option('browser') || 'PhantomJS' ]
 			},
 			unit: {
 				browsers: [ grunt.option('browser') || 'PhantomJS' ]

@@ -23,11 +23,20 @@ NG_DOCS={
     },
     {
       "section": "api",
+      "id": "post.controller:PostListController",
+      "shortName": "PostListController",
+      "type": "controller",
+      "moduleName": "post",
+      "shortDescription": "post list controller",
+      "keywords": "api controller list post"
+    },
+    {
+      "section": "api",
       "id": "post.controller:PostMainController",
       "shortName": "PostMainController",
       "type": "controller",
       "moduleName": "post",
-      "shortDescription": "main post controller",
+      "shortDescription": "post main controller",
       "keywords": "api array controller fetch function getposts main post posts"
     },
     {

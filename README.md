@@ -1,5 +1,10 @@
-# angularjs-ci[![Build Status](https://travis-ci.org/anisdjer/angularjs-ci.svg?branch=develop)](https://travis-ci.org/anisdjer/angularjs-ci)
+# angularjs-ci
 Learn how to implement unit tests and protractor tests
+
+[![Build Status](https://travis-ci.org/anisdjer/angularjs-ci.svg?branch=develop)](https://travis-ci.org/anisdjer/angularjs-ci)
+[![Coverage Status](https://coveralls.io/repos/anisdjer/angularjs-ci/badge.svg?branch=develop&service=github)](https://coveralls.io/github/anisdjer/angularjs-ci?branch=develop)
+
+
 # LICENCE
 The MIT License (MIT)
 

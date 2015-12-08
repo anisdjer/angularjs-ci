@@ -32,7 +32,11 @@ module.exports = function (karma) {
         },
         // optionally, configure the reporter
         coverageReporter: {
-            type: 'html',
+            reporters: [
+                // reporters not supporting the `file` property
+                { type: 'html', subdir: 'report-html' },
+                { type: 'lcov', subdir: 'report-lcov' }
+            ],
             dir: '../coverage'
         },
         // level of logging

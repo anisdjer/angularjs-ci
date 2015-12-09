@@ -3,6 +3,7 @@ Learn how to implement unit tests and protractor tests
 
 [![Build Status](https://travis-ci.org/anisdjer/angularjs-ci.svg?branch=develop)](https://travis-ci.org/anisdjer/angularjs-ci)
 [![Coverage Status](https://coveralls.io/repos/anisdjer/angularjs-ci/badge.svg?branch=develop&service=github)](https://coveralls.io/github/anisdjer/angularjs-ci?branch=develop)
+[![Inline docs](http://inch-ci.org/github/anisdjer/angularjs-ci.svg?branch=develop&style=shields)](http://inch-ci.org/github/anisdjer/angularjs-ci)
 
 
 # LICENCE

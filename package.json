@@ -1,6 +1,6 @@
 {
   "name": "angularjs-ci",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Learn how to implement unit tests and protractor tests",
   "scripts": {
     "postinstall": "bower install",

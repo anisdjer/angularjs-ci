@@ -1,0 +1,9 @@
+<section
+    data-ng-controller="PostListController as postCtrl"
+    data-ng-init="postCtrl.getPosts();"
+    >
+    <h1>Posts</h1>
+    <ul>
+        <li data-ng-repeat="post in postCtrl.posts" data-ng-bind="post.title"></li>
+    </ul>
+</section>
